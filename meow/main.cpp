@@ -5,48 +5,48 @@
 
 int main() {
     setlocale(LC_ALL, "Russian");
-    std::cout << "=== Создание студентов ===" << std::endl;
+    std::cout << "=== РЎРѕР·РґР°РЅРёРµ СЃС‚СѓРґРµРЅС‚РѕРІ ===" << std::endl;
 
-    std::vector<std::string> debts1 = { "математика", "физика", "информатика" };
-    mt::Student student1("Джонни", "Кейдж", debts1);
+    std::vector<std::string> debts1 = { "РјР°С‚РµРјР°С‚РёРєР°", "С„РёР·РёРєР°", "РёРЅС„РѕСЂРјР°С‚РёРєР°" };
+    mt::Student student1("Р”Р¶РѕРЅРЅРё", "РљРµР№РґР¶", debts1);
     student1.displayInfo();
 
-    std::vector<std::string> debts2 = { "математика", "русский язык", "химия" };
-    mt::Student student2("Кенши", "Такахаши", debts2);
+    std::vector<std::string> debts2 = { "РјР°С‚РµРјР°С‚РёРєР°", "СЂСѓСЃСЃРєРёР№ СЏР·С‹Рє", "С…РёРјРёСЏ" };
+    mt::Student student2("РљРµРЅС€Рё", "РўР°РєР°С…Р°С€Рё", debts2);
     student2.displayInfo();
 
-    std::cout << "\n=== Тест оператора + ===" << std::endl;
+    std::cout << "\n=== РўРµСЃС‚ РѕРїРµСЂР°С‚РѕСЂР° + ===" << std::endl;
     mt::Student resultPlus = student1 + student2;
     resultPlus.displayInfo();
 
-    std::cout << "\n=== Тест оператора -= ===" << std::endl;
+    std::cout << "\n=== РўРµСЃС‚ РѕРїРµСЂР°С‚РѕСЂР° -= ===" << std::endl;
     mt::Student resultMinus = student1 -= student2;
     resultMinus.displayInfo();
 
-    std::cout << "\n=== Тест оператора / ===" << std::endl;
+    std::cout << "\n=== РўРµСЃС‚ РѕРїРµСЂР°С‚РѕСЂР° / ===" << std::endl;
     mt::Student resultDivide = student1 / student2;
     resultDivide.displayInfo();
 
-    std::cout << "\n=== Тест оператора присваивания ===" << std::endl;
+    std::cout << "\n=== РўРµСЃС‚ РѕРїРµСЂР°С‚РѕСЂР° РїСЂРёСЃРІР°РёРІР°РЅРёСЏ ===" << std::endl;
     mt::Student student3;
     student3 = student1;
-    std::cout << "После присваивания student3 = student1:" << std::endl;
+    std::cout << "РџРѕСЃР»Рµ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ student3 = student1:" << std::endl;
     student3.displayInfo();
 
-    std::cout << "\n=== Тест конструктора копирования ===" << std::endl;
+    std::cout << "\n=== РўРµСЃС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° РєРѕРїРёСЂРѕРІР°РЅРёСЏ ===" << std::endl;
     mt::Student student4 = student2;
     student4.displayInfo();
 
-    std::cout << "\n=== Добавление и удаление долгов ===" << std::endl;
-    student1.addDebt("английский язык");
-    std::cout << "После добавления долга:" << std::endl;
+    std::cout << "\n=== Р”РѕР±Р°РІР»РµРЅРёРµ Рё СѓРґР°Р»РµРЅРёРµ РґРѕР»РіРѕРІ ===" << std::endl;
+    student1.addDebt("Р°РЅРіР»РёР№СЃРєРёР№ СЏР·С‹Рє");
+    std::cout << "РџРѕСЃР»Рµ РґРѕР±Р°РІР»РµРЅРёСЏ РґРѕР»РіР°:" << std::endl;
     student1.displayInfo();
 
-    student1.removeDebt("физика");
-    std::cout << "После удаления долга 'физика':" << std::endl;
+    student1.removeDebt("С„РёР·РёРєР°");
+    std::cout << "РџРѕСЃР»Рµ СѓРґР°Р»РµРЅРёСЏ РґРѕР»РіР° 'С„РёР·РёРєР°':" << std::endl;
     student1.displayInfo();
 
-    std::cout << "\nВсе удалено:(" << std::endl;
+    std::cout << "\nР’СЃРµ СѓРґР°Р»РµРЅРѕ:(" << std::endl;
 
     return 0;
 }
