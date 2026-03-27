@@ -6,7 +6,7 @@
 
 Student::Student() : firstName(""), lastName(""), specialization(""),
 courseNumber(1), groupNumber(""), variantNumber(0) {
-    std::cout << "Êîíñòğóêòîğ ïî óìîë÷àíèş Student âûçâàí" << std::endl;
+    std::cout << "ĞšĞ¾Ğ½ÑÑ‚Ñ€ÑƒĞºÑ‚Ğ¾Ñ€ Ğ¿Ğ¾ ÑƒĞ¼Ğ¾Ğ»Ñ‡Ğ°Ğ½Ğ¸Ñ Student Ğ²Ñ‹Ğ·Ğ²Ğ°Ğ½" << std::endl;
 }
 
 
@@ -21,7 +21,7 @@ Student::Student(const std::string& fName, const std::string& lName,
     if (courseNumber > 6) courseNumber = 6;
     if (variantNumber < 0) variantNumber = 0;
 
-    std::cout << "Êîíñòğóêòîğ ïîëíîãî çàïîëíåíèÿ Student âûçâàí" << std::endl;
+    std::cout << "ĞšĞ¾Ğ½ÑÑ‚Ñ€ÑƒĞºÑ‚Ğ¾Ñ€ Ğ¿Ğ¾Ğ»Ğ½Ğ¾Ğ³Ğ¾ Ğ·Ğ°Ğ¿Ğ¾Ğ»Ğ½ĞµĞ½Ğ¸Ñ Student Ğ²Ñ‹Ğ·Ğ²Ğ°Ğ½" << std::endl;
 }
 
 
@@ -30,18 +30,18 @@ Student::Student(const Student& other)
     specialization(other.specialization), courseNumber(other.courseNumber),
     groupNumber(other.groupNumber), variantNumber(other.variantNumber),
     debts(other.debts) {
-    std::cout << "Êîíñòğóêòîğ êîïèğîâàíèÿ Student âûçâàí" << std::endl;
+    std::cout << "ĞšĞ¾Ğ½ÑÑ‚Ñ€ÑƒĞºÑ‚Ğ¾Ñ€ ĞºĞ¾Ğ¿Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ¸Ñ Student Ğ²Ñ‹Ğ·Ğ²Ğ°Ğ½" << std::endl;
 }
 
 
 Student::~Student() {
     clearDebts();
-    std::cout << "Äåñòğóêòîğ Student âûçâàí äëÿ: " << firstName << " " << lastName << std::endl;
+    std::cout << "Ğ”ĞµÑÑ‚Ñ€ÑƒĞºÑ‚Ğ¾Ñ€ Student Ğ²Ñ‹Ğ·Ğ²Ğ°Ğ½ Ğ´Ğ»Ñ: " << firstName << " " << lastName << std::endl;
 }
 
 
 Student& Student::operator=(const Student& other) {
-    std::cout << "Îïåğàòîğ ïğèñâàèâàíèÿ Student âûçâàí" << std::endl;
+    std::cout << "ĞĞ¿ĞµÑ€Ğ°Ñ‚Ğ¾Ñ€ Ğ¿Ñ€Ğ¸ÑĞ²Ğ°Ğ¸Ğ²Ğ°Ğ½Ğ¸Ñ Student Ğ²Ñ‹Ğ·Ğ²Ğ°Ğ½" << std::endl;
 
     if (this != &other) {
         firstName = other.firstName;
@@ -58,9 +58,9 @@ Student& Student::operator=(const Student& other) {
 
 
 Student Student::operator+(const Student& other) const {
-    std::cout << "Îïåğàòîğ + âûçâàí" << std::endl;
+    std::cout << "ĞĞ¿ĞµÑ€Ğ°Ñ‚Ğ¾Ñ€ + Ğ²Ñ‹Ğ·Ğ²Ğ°Ğ½" << std::endl;
 
-    std::string newFirstName = firstName + " è " + other.firstName;
+    std::string newFirstName = firstName + " Ğ¸ " + other.firstName;
     std::string newLastName = lastName + "-" + other.lastName;
     std::string newSpecialization = specialization + "/" + other.specialization;
 
@@ -81,7 +81,7 @@ Student Student::operator+(const Student& other) const {
 
 
 Student& Student::operator-=(const Student& other) {
-    std::cout << "Îïåğàòîğ -= âûçâàí" << std::endl;
+    std::cout << "ĞĞ¿ĞµÑ€Ğ°Ñ‚Ğ¾Ñ€ -= Ğ²Ñ‹Ğ·Ğ²Ğ°Ğ½" << std::endl;
 
     std::vector<std::string> newDebts;
     for (const auto& debt : debts) {
@@ -96,9 +96,9 @@ Student& Student::operator-=(const Student& other) {
 
 
 Student Student::operator/(const Student& other) const {
-    std::cout << "Îïåğàòîğ / âûçâàí" << std::endl;
+    std::cout << "ĞĞ¿ĞµÑ€Ğ°Ñ‚Ğ¾Ñ€ / Ğ²Ñ‹Ğ·Ğ²Ğ°Ğ½" << std::endl;
 
-    std::string newFirstName = firstName + " è " + other.firstName;
+    std::string newFirstName = firstName + " Ğ¸ " + other.firstName;
     std::string newLastName = lastName + "-" + other.lastName;
     std::string newSpecialization = specialization;
 
@@ -166,17 +166,17 @@ void Student::displayInfo() const {
 
 std::string Student::getInfo() const {
     std::stringstream ss;
-    ss << "=== Èíôîğìàöèÿ î ñòóäåíòå ===" << std::endl;
-    ss << "Èìÿ: " << firstName << std::endl;
-    ss << "Ôàìèëèÿ: " << lastName << std::endl;
-    ss << "Íàïğàâëåíèå: " << specialization << std::endl;
-    ss << "Êóğñ: " << courseNumber << std::endl;
-    ss << "Ãğóïïà: " << groupNumber << std::endl;
-    ss << "Âàğèàíò: " << variantNumber << std::endl;
-    ss << "Äîëãè: ";
+    ss << "=== Ğ˜Ğ½Ñ„Ğ¾Ñ€Ğ¼Ğ°Ñ†Ğ¸Ñ Ğ¾ ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğµ ===" << std::endl;
+    ss << "Ğ˜Ğ¼Ñ: " << firstName << std::endl;
+    ss << "Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ: " << lastName << std::endl;
+    ss << "ĞĞ°Ğ¿Ñ€Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ: " << specialization << std::endl;
+    ss << "ĞšÑƒÑ€Ñ: " << courseNumber << std::endl;
+    ss << "Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ°: " << groupNumber << std::endl;
+    ss << "Ğ’Ğ°Ñ€Ğ¸Ğ°Ğ½Ñ‚: " << variantNumber << std::endl;
+    ss << "Ğ”Ğ¾Ğ»Ğ³Ğ¸: ";
 
     if (debts.empty()) {
-        ss << "íåò äîëãîâ";
+        ss << "Ğ½ĞµÑ‚ Ğ´Ğ¾Ğ»Ğ³Ğ¾Ğ²";
     }
     else {
         for (size_t i = 0; i < debts.size(); ++i) {
@@ -193,21 +193,21 @@ std::string Student::getInfo() const {
 
 Application Student::createPromotionApplication() const {
     int nextCourse = courseNumber + 1;
-    return Application(firstName, lastName, "ïåğåâîä_íà_ñëåäóşùèé_êóğñ",
-        "Çàÿâëåíèå íà ïåğåâîä íà ñëåäóşùèé êóğñ", nextCourse, "");
+    return Application(firstName, lastName, "Ğ¿ĞµÑ€ĞµĞ²Ğ¾Ğ´_Ğ½Ğ°_ÑĞ»ĞµĞ´ÑƒÑÑ‰Ğ¸Ğ¹_ĞºÑƒÑ€Ñ",
+        "Ğ—Ğ°ÑĞ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ½Ğ° Ğ¿ĞµÑ€ĞµĞ²Ğ¾Ğ´ Ğ½Ğ° ÑĞ»ĞµĞ´ÑƒÑÑ‰Ğ¸Ğ¹ ĞºÑƒÑ€Ñ", nextCourse, "");
 }
 
 
 Application Student::createGroupTransferApplication(const std::string& newGroup) const {
-    return Application(firstName, lastName, "ïåğåâîä_â_äğóãóş_ãğóïïó",
-        "Çàÿâëåíèå íà ïåğåâîä â ãğóïïó " + newGroup,
+    return Application(firstName, lastName, "Ğ¿ĞµÑ€ĞµĞ²Ğ¾Ğ´_Ğ²_Ğ´Ñ€ÑƒĞ³ÑƒÑ_Ğ³Ñ€ÑƒĞ¿Ğ¿Ñƒ",
+        "Ğ—Ğ°ÑĞ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ½Ğ° Ğ¿ĞµÑ€ĞµĞ²Ğ¾Ğ´ Ğ² Ğ³Ñ€ÑƒĞ¿Ğ¿Ñƒ " + newGroup,
         courseNumber, newGroup);
 }
 
 
 void Student::clearDebts() {
     if (!debts.empty()) {
-        //std::cout << "Î÷èñòêà äîëãîâ ñòóäåíòà " << firstName << " " << lastName << ": óäàëåíî " << debts.size() << " ıëåìåíòîâ" << std::endl;
+        //std::cout << "ĞÑ‡Ğ¸ÑÑ‚ĞºĞ° Ğ´Ğ¾Ğ»Ğ³Ğ¾Ğ² ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ° " << firstName << " " << lastName << ": ÑƒĞ´Ğ°Ğ»ĞµĞ½Ğ¾ " << debts.size() << " ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ¾Ğ²" << std::endl;
         debts.clear();
     }
 }
