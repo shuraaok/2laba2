@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\cishka\\2laba2\\2laba3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|D:\\cishka\\2laba2\\2laba3\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|D:\\cishka\\2laba2\\2laba3\\deanery.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|solutionrelative:deanery.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|D:\\cishka\\2laba2\\2laba3\\deanery.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|solutionrelative:deanery.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|D:\\cishka\\2laba2\\2laba3\\application.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|solutionrelative:application.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|D:\\cishka\\2laba2\\2laba3\\student.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|solutionrelative:student.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|D:\\cishka\\2laba2\\2laba3\\student.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CDDDD201-B9F0-433A-88FF-181DE5D6C070}|2laba3.vcxproj|solutionrelative:student.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "deanery.cpp",
+              "DocumentMoniker": "D:\\cishka\\2laba2\\2laba3\\deanery.cpp",
+              "RelativeDocumentMoniker": "deanery.cpp",
+              "ToolTip": "D:\\cishka\\2laba2\\2laba3\\deanery.cpp",
+              "RelativeToolTip": "deanery.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-27T22:46:30.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "deanery.hpp",
+              "DocumentMoniker": "D:\\cishka\\2laba2\\2laba3\\deanery.hpp",
+              "RelativeDocumentMoniker": "deanery.hpp",
+              "ToolTip": "D:\\cishka\\2laba2\\2laba3\\deanery.hpp",
+              "RelativeToolTip": "deanery.hpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-27T22:46:07.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "application.hpp",
+              "DocumentMoniker": "D:\\cishka\\2laba2\\2laba3\\application.hpp",
+              "RelativeDocumentMoniker": "application.hpp",
+              "ToolTip": "D:\\cishka\\2laba2\\2laba3\\application.hpp",
+              "RelativeToolTip": "application.hpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-27T22:45:21.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "student.hpp",
+              "DocumentMoniker": "D:\\cishka\\2laba2\\2laba3\\student.hpp",
+              "RelativeDocumentMoniker": "student.hpp",
+              "ToolTip": "D:\\cishka\\2laba2\\2laba3\\student.hpp",
+              "RelativeToolTip": "student.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-27T22:41:51.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\cishka\\2laba2\\2laba3\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\cishka\\2laba2\\2laba3\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-27T22:41:22.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "student.cpp",
+              "DocumentMoniker": "D:\\cishka\\2laba2\\2laba3\\student.cpp",
+              "RelativeDocumentMoniker": "student.cpp",
+              "ToolTip": "D:\\cishka\\2laba2\\2laba3\\student.cpp",
+              "RelativeToolTip": "student.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-27T22:42:52.099Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
