@@ -5,30 +5,30 @@
 
 namespace mt {
 Student::Student() : firstName(""), lastName("") {
-    std::cout << "Конструктор по умолчанию вызван" << std::endl;
+    std::cout << "РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РІС‹Р·РІР°РЅ" << std::endl;
 }
 
-// Конструктор полного заполнения
+// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕР»РЅРѕРіРѕ Р·Р°РїРѕР»РЅРµРЅРёСЏ
 Student::Student(const std::string& fName, const std::string& lName,
     const std::vector<std::string>& debtList)
     : firstName(fName), lastName(lName), debts(debtList) {
-    std::cout << "Конструктор полного заполнения вызван" << std::endl;
+    std::cout << "РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕР»РЅРѕРіРѕ Р·Р°РїРѕР»РЅРµРЅРёСЏ РІС‹Р·РІР°РЅ" << std::endl;
 }
 
-// Конструктор копирования
+// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
 Student::Student(const Student& other)
     : firstName(other.firstName), lastName(other.lastName), debts(other.debts) {
-    std::cout << "Конструктор копирования вызван" << std::endl;
+    std::cout << "РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ РІС‹Р·РІР°РЅ" << std::endl;
 }
 
-// Деструктор
+// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 Student::~Student() {
     clearDebts();
 }
 
-// Оператор присваивания
+// РћРїРµСЂР°С‚РѕСЂ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ
 Student& Student::operator=(const Student& other) {
-    std::cout << "Оператор присваивания вызван" << std::endl;
+    std::cout << "РћРїРµСЂР°С‚РѕСЂ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ РІС‹Р·РІР°РЅ" << std::endl;
 
     if (this != &other) {
         firstName = other.firstName;
@@ -40,11 +40,11 @@ Student& Student::operator=(const Student& other) {
 }
 
 Student Student::operator+(const Student& other) const {
-    std::cout << "Оператор + вызван" << std::endl;
+    std::cout << "РћРїРµСЂР°С‚РѕСЂ + РІС‹Р·РІР°РЅ" << std::endl;
 
-    std::string newFirstName = firstName + " и " + other.firstName;
+    std::string newFirstName = firstName + " Рё " + other.firstName;
 
-    std::string newLastName = lastName + " и " + other.lastName;
+    std::string newLastName = lastName + " Рё " + other.lastName;
 
     std::vector<std::string> newDebts = debts;
 
@@ -58,9 +58,9 @@ Student Student::operator+(const Student& other) const {
 }
 
 Student Student::operator-=(const Student& other) const {
-    std::cout << "Оператор -= вызван" << std::endl;
+    std::cout << "РћРїРµСЂР°С‚РѕСЂ -= РІС‹Р·РІР°РЅ" << std::endl;
 
-    std::string newFirstName = firstName + " без " + other.firstName;
+    std::string newFirstName = firstName + " Р±РµР· " + other.firstName;
 
     std::string newLastName = lastName;
 
@@ -76,11 +76,11 @@ Student Student::operator-=(const Student& other) const {
 }
 
 Student Student::operator/(const Student& other) const {
-    std::cout << "Оператор / вызван" << std::endl;
+    std::cout << "РћРїРµСЂР°С‚РѕСЂ / РІС‹Р·РІР°РЅ" << std::endl;
 
-    std::string newFirstName = firstName + " и " + other.firstName;
+    std::string newFirstName = firstName + " Рё " + other.firstName;
 
-    std::string newLastName = lastName + " и " + other.lastName;
+    std::string newLastName = lastName + " Рё " + other.lastName;
 
     std::vector<std::string> newDebts;
 
@@ -93,7 +93,7 @@ Student Student::operator/(const Student& other) const {
     return Student(newFirstName, newLastName, newDebts);
 }
 
-// Геттеры
+// Р“РµС‚С‚РµСЂС‹
 std::string Student::getFirstName() const {
     return firstName;
 }
@@ -106,7 +106,7 @@ std::vector<std::string> Student::getDebts() const {
     return debts;
 }
 
-// Сеттеры
+// РЎРµС‚С‚РµСЂС‹
 void Student::setFirstName(const std::string& fName) {
     firstName = fName;
 }
@@ -119,12 +119,12 @@ void Student::setDebts(const std::vector<std::string>& debtList) {
     debts = debtList;
 }
 
-//добавление долга
+//РґРѕР±Р°РІР»РµРЅРёРµ РґРѕР»РіР°
 void Student::addDebt(const std::string& debt) {
     debts.push_back(debt);
 }
 
-//удаление долга
+//СѓРґР°Р»РµРЅРёРµ РґРѕР»РіР°
 void Student::removeDebt(const std::string& debt) {
     auto it = std::find(debts.begin(), debts.end(), debt);
     if (it != debts.end()) {
@@ -132,15 +132,15 @@ void Student::removeDebt(const std::string& debt) {
     }
 }
 
-//вывод информации о студенте
+//РІС‹РІРѕРґ РёРЅС„РѕСЂРјР°С†РёРё Рѕ СЃС‚СѓРґРµРЅС‚Рµ
 void Student::displayInfo() const {
-    std::cout << "=== Информация о студенте ===" << std::endl;
-    std::cout << "Имя: " << firstName << std::endl;
-    std::cout << "Фамилия: " << lastName << std::endl;
-    std::cout << "Долги: ";
+    std::cout << "=== РРЅС„РѕСЂРјР°С†РёСЏ Рѕ СЃС‚СѓРґРµРЅС‚Рµ ===" << std::endl;
+    std::cout << "РРјСЏ: " << firstName << std::endl;
+    std::cout << "Р¤Р°РјРёР»РёСЏ: " << lastName << std::endl;
+    std::cout << "Р”РѕР»РіРё: ";
 
     if (debts.empty()) {
-        std::cout << "нет долгов";
+        std::cout << "РЅРµС‚ РґРѕР»РіРѕРІ";
     }
     else {
         for (size_t i = 0; i < debts.size(); ++i) {
